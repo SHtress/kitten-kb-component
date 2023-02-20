@@ -1,0 +1,27 @@
+concept_kitten
+<- sc_node_class;
+<= nrel_inclusion:
+	concept_animal;
+=> nrel_main_idtf:
+	[котенок]
+	(* <- lang_ru;; *);
+	[kitten]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (котенок)]
+		(* <- lang_ru;; *);
+		[Def. (kitten)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Котенок — это маленькое домашнее животное семейства кошачьих, которое мяукает. Оно зависит от кота.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+-> kitten_woof;;
